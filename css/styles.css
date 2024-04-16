@@ -148,7 +148,7 @@ height: auto;}
  z-index: 1000;
  top: 0;
  right: 0;
- width: 180px;
+ width: 200px;
  height: 450px;
  opacity: 0;
  visibility: hidden;
@@ -487,7 +487,6 @@ color: var(--link-active-color);
   min-width: 169px; 
 }
 
-
 }
 
 /*-----------------Описываем ДЕСКТОП---------------------*/
@@ -544,6 +543,7 @@ padding: 24px 0;
 .nav-link {
   padding-top: 24px;
   padding-bottom: 24px;
+  font-size: 18px;
     }
 
 }
