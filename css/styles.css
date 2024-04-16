@@ -149,7 +149,7 @@ height: auto;}
  top: 0;
  right: 0;
  width: 180px;
- height: 500px;
+ height: 450px;
  opacity: 0;
  visibility: hidden;
  pointer-events: none;
@@ -158,12 +158,14 @@ height: auto;}
             visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 transform: translateX(100%);
+
+/* border-radius: 15px; */
 }
 
 
 /*--Открытие мобильного меню--*/
 .mobile-menu.is-open
-{ opacity: 1;
+{ opacity: 0.95;
   visibility: visible;
   pointer-events: auto; 
 
@@ -179,9 +181,9 @@ transform: translateX(100%);
  justify-content: space-between;
  position: relative;
  padding-top: 80px;
- padding-left: 40px;
+ padding-left: 25px;
  padding-bottom: 40px;
- padding-right: 35px;
+ padding-right: 25px;
  }
 
 
@@ -204,7 +206,14 @@ transform: translateX(100%);
 
 /*--Описываем иконку закрытия мобильного меню--*/
 .icon-mobile-menu-close 
-{ fill: #2e2f42; }
+ { 
+  stroke: #696c92;
+  
+  
+  /* background-color: #696c92; */
+  width: 24px;
+  height: 24px;
+ }
 
 
 /*--Мобильное меню навигации--*/
@@ -219,7 +228,7 @@ transform: translateX(100%);
 /*--Описываем линки навигации мобильного меню--*/
 .mobile-menu-link
 {font-weight: 500;
- font-size: 18px;
+ font-size: 16px;
  line-height: 1.11;
  letter-spacing: 0.02em;
  text-decoration: none;
