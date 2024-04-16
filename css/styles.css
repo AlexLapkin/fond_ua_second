@@ -208,11 +208,9 @@ transform: translateX(100%);
 .icon-mobile-menu-close 
  { 
   stroke: #696c92;
-  
-  
   /* background-color: #696c92; */
-  width: 24px;
-  height: 24px;
+  width: 16px;
+  height: 16px;
  }
 
 
