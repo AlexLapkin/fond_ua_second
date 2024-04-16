@@ -372,8 +372,6 @@ height: 40px;}
 }
 
 
-
-
 /*-----------ПЛАНШЕТНАЯ ВЕРСИЯ-----------*/
 
 @media screen and (min-width:768px)
@@ -713,7 +711,6 @@ screen and (min-resolution: 2ppx) and (min-width: 768px) {
   
 }
 
-
 /*--Задаем параметры заголовка секции hero--*/
 .hero-title {
 color: var(--hero-title-color);
@@ -774,9 +771,7 @@ screen and (min-resolution: 2ppx) and (min-width: 1158px) {
 .main-btn {
  margin-top: 48px;
 }
-
 }
-
 
 /*------------------СЕКЦИЯ OUR TEAM----------------*/
 
@@ -787,7 +782,7 @@ screen and (min-resolution: 2ppx) and (min-width: 1158px) {
 .section-team
 {
 /* background-color: var(--section-team-background-color); */
-padding: 60px 0;
+padding: 100px 0;
 position: relative;
 border-bottom: 2px solid yellow;
 }
@@ -810,7 +805,7 @@ text-align: center;
 {
  display: flex;
  flex-direction: column;
- row-gap: 72px;
+ row-gap: 40px;
  align-items: center;
  }
 
@@ -909,7 +904,7 @@ background-color: #404bbf;
     align-items: center;
     flex-wrap: wrap;
     column-gap: 24px;
-    row-gap: 64px;   }
+    row-gap: 50px;   }
 
 
 /*--Считаем ширину карточки сотрудника--*/
@@ -951,7 +946,7 @@ padding: 100px 0;
 
 /*--Задаем внутренние паддинги секции заказчиков--*/
 .section-customers
-{padding: 60px 0;
+{padding: 100px 0;
   border-bottom: 2px solid yellow;
   position: relative;
 }
@@ -967,7 +962,7 @@ padding: 100px 0;
 
 /*--Описание контейнера логотипов заказчиков--*/
 .logo-company
-{margin-bottom:72px;}
+{margin-bottom:50px;}
 
 
 /*--Описываем контейнер--*/
@@ -1329,7 +1324,6 @@ align-items: baseline;
  .foot-add {
   display: block;
  }
-
 
 }
 
