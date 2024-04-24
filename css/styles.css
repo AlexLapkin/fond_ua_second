@@ -669,6 +669,12 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 
+.img-add {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
 
 /*----------------ПЛАНШЕТНАЯ ВЕРСИЯ------------*/
 
@@ -1037,6 +1043,11 @@ fill: #8E8F99;
   text-align: center;
   font-size: 16px;
   font-weight: 500;
+}
+
+.partners-img {
+  width: 166px;
+  max-height: 85px;
 }
 
 
