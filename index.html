@@ -47,7 +47,22 @@
 
 
         <!--Кнопка доната во всех версиях, кроме мобильной-->
+        <!-- Вариант 1 - просто ссылка a href="" -->
+        <!-- <a class="main-btn-donate list" href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIwLjAwIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6ItCR0LvQsNCz0L7QtNGW0LnQvdC40Lkg0LLQvdC10YHQvtC6IiwicHVibGljX2tleSI6InNhbmRib3hfaTc3NDU1NDI2MDg3IiwibGFuZ3VhZ2UiOiJ1ayJ9&amp;signature=MwnakAQoXQBDg0HB+UZgYfv6JL4="
+        target="_blank" rel="noopener">DONATE NOW</a> -->
+
+        <!-- Вариант 2 - форма -->
         <form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
+        accept-charset="utf-8">
+        <input type="hidden" name="data" data-v-3af7e782="" value="eyJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIxMCIsImN1cnJlbmN5IjoiVUFIIiwiZGVzY3JpcHRpb24iOiJEb25hdGlvbiBmb3IgTGlmZWxpbmUgVWtyYWluZSIsIm9yZGVyX2lkIjoiOGNiYmYyOWQzODg0ZSIsInZlcnNpb24iOiIzIiwicHVibGljX2tleSI6Imk5Njg2MjYyMjI4MSIsInByaXZhdGVfa2V5IjoieDhFZDV2WE9iczhQbGtMV2ZpN0VDZ040ZTdmcDE3Qzk5NklONU0zZSJ9">
+        <input type="hidden" name="signature" data-v-3af7e782="" value="bfaZeH3KP0Sv3NhR4IlXHQqnCB4=">
+        <button type="submit"
+        class="main-btn-donate list"
+        alt="DONATE NOW">DONATE NOW</button>
+        </form>
+
+         <!-- Вариант 3 - форма -->
+        <!-- <form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
         accept-charset="utf-8">
         <input type="hidden" name="data" value="eyAidmVyc2lvbiIgOiAzLCAicHVibGljX2tleSIgOiAieW91cl9wdWJsaWNfa2V5IiwgImFjdGlv
         biIgOiAicGF5IiwgImFtb3VudCIgOiAxLCAiY3VycmVuY3kiIDogIlVTRCIsICJkZXNjcmlwdGlv
@@ -56,7 +71,7 @@
         <button type="submit"
         class="main-btn-donate list"
         alt="DONATE NOW">DONATE NOW</button>
-        </form>
+        </form> -->
         <!--Кнопка доната во всех версиях, кроме мобильной-->
 
         <!-- src="//static.liqpay.ua/buttons/payUk.png"  -->
@@ -106,7 +121,9 @@
           </ul>
  
            <!--Кнопка доната мобильной версии-->
-           <form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
+           <a class="main-btn-donate-mobile list" href="https://www.liqpay.ua/api/3/checkout?data=eyJ2ZXJzaW9uIjozLCJhY3Rpb24iOiJwYXlkb25hdGUiLCJhbW91bnQiOiIwLjAwIiwiY3VycmVuY3kiOiJVU0QiLCJkZXNjcmlwdGlvbiI6ItCR0LvQsNCz0L7QtNGW0LnQvdC40Lkg0LLQvdC10YHQvtC6IiwicHVibGljX2tleSI6InNhbmRib3hfaTc3NDU1NDI2MDg3IiwibGFuZ3VhZ2UiOiJ1ayJ9&amp;signature=MwnakAQoXQBDg0HB+UZgYfv6JL4="
+        target="_blank" rel="noopener">DONATE NOW</a>
+           <!-- <form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
            accept-charset="utf-8"> 
            <input type="hidden" name="data" value="eyAidmVyc2lvbiIgOiAzLCAicHVibGljX2tleSIgOiAieW91cl9wdWJsaWNfa2V5IiwgImFjdGlv
            biIgOiAicGF5IiwgImFtb3VudCIgOiAxLCAiY3VycmVuY3kiIDogIlVTRCIsICJkZXNjcmlwdGlv
@@ -115,7 +132,7 @@
            <button type="submit"
            class="main-btn-donate-mobile list"
            alt="DONATE NOW">DONATE NOW</button>
-           </form>
+           </form> -->
           <!--Кнопка доната мобильной версии-->
 
           <!-- <button type="button" class="main-btn-donate-mobile list" data-modal-open>DONATE NOW</button> -->
