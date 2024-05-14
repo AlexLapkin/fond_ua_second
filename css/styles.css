@@ -587,7 +587,8 @@ padding: 24px 0;
 
 max-width: 428px;
 /* padding: 120px 0; */
-padding-top: 100px;
+/* margin-top: -40px; */
+padding-top: 110px;
 padding-bottom: 30px;
 padding-left: 0;
 padding-right: 0;
@@ -622,8 +623,6 @@ screen and (min-resolution: 2ppx) and (max-width: 767px)
     url(../images/hero/Hero_mobile_2x.jpg) */
    }
 }
-
-
 
 /*--Задаем параметры заголовка секции hero--*/
 .hero-title {
@@ -692,10 +691,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 /*--Задаем параметры секции hero--*/
 .hero {
 /* background-color: var(--hero-background-color); */
-margin-top: 0;
 max-width: 768px;
 /* padding: 140px 0; */
-padding-top: 140px;
+padding-top: 120px;
 padding-bottom: 70px;
 padding-left: 0;
 padding-right: 0;
@@ -753,9 +751,8 @@ margin-right: auto;
 /*--Задаем параметры секции hero--*/
 .hero {
 /* background-color: var(--hero-background-color); */
-margin-top: 0;
 max-width: 1440px;
-/* padding: 160px 0; */
+margin-top: -40px;
 padding-top: 160px;
 padding-bottom: 80px;
 padding-left: 0;
@@ -799,7 +796,7 @@ screen and (min-resolution: 2ppx) and (min-width: 1158px) {
 {
 /* background-color: var(--section-team-background-color); */
 margin-top: -40px;
-padding-top: 80px;
+padding-top: 90px;
 padding-bottom: 40px;
 padding-left: 0;
 padding-right: 0;
@@ -951,7 +948,7 @@ padding-right: 0;
 /*--Данные секции Our Team, у которой отличается фон--*/
 .section-team
 { margin-top: -80px;
-  padding-top: 160px;
+  padding-top: 140px;
   padding-bottom: 80px;
   padding-left: 0;
   padding-right: 0;} /*--Задаем внутренние паддинги--*/
@@ -977,7 +974,7 @@ padding-right: 0;
 .section-customers
 {
   margin-top: -40px;
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 60px;
   padding-left: 0;
   padding-right: 0;
@@ -996,7 +993,7 @@ padding-right: 0;
 
 /*--Описание контейнера логотипов заказчиков--*/
 .logo-company
-{margin-bottom:50px;}
+{margin-bottom:40px;}
 
 
 /*--Описываем контейнер--*/
@@ -1116,7 +1113,7 @@ fill: #8E8F99;
 /*--Задаем внутренние паддинги секции закачиков--*/
 .section-customers
 { margin-top: -80px;
-  padding-top: 160px;
+  padding-top: 140px;
   padding-bottom: 80px;
   padding-left: 0;
   padding-right: 0;}
