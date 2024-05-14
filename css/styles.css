@@ -36,8 +36,8 @@ height: auto;}
 {
 --main-text-color: #434455;
 --main-background-color:#FFFFFF;
---logo-check-color:yellow;
---header-word-color:blue;
+--logo-check-color: blue;
+--header-word-color: yellow;
 --nav-link-color:#2E2F42;
 --link-active-color:#404BBF;
 --hero-background-color:#2E2F42;
@@ -101,7 +101,7 @@ height: auto;}
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
+      
     
   -webkit-text-stroke: 0.5px blue;
 }
@@ -152,11 +152,11 @@ height: auto;}
  top: 0;
  right: 0;
  width: 200px;
- height: 520px;
+ height: 400px;
  opacity: 0;
  visibility: hidden;
  pointer-events: none;
- background-color: #696c92;
+ background-color: white;
  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
             visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -168,10 +168,9 @@ transform: translateX(100%);
 
 /*--Открытие мобильного меню--*/
 .mobile-menu.is-open
-{ opacity: 0.95;
+{ opacity: 0.9;
   visibility: visible;
   pointer-events: auto; 
-
   transform: translateX(0);
 }
 
@@ -200,7 +199,7 @@ transform: translateX(100%);
  justify-content: center; 
  width: 24px; 
  height: 24px; 
- border: 1px solid #D9D9D9;
+ border: 1px solid white;
  border-radius:50%;
  background-color: #ffff; 
  padding: 0;
@@ -210,7 +209,7 @@ transform: translateX(100%);
 /*--Описываем иконку закрытия мобильного меню--*/
 .icon-mobile-menu-close 
  { 
-  stroke: #696c92;
+  stroke: black;
   /* background-color: #696c92; */
   width: 16px;
   height: 16px;
@@ -245,7 +244,7 @@ transform: translateX(100%);
 
 /*--Задаем цвет другим ссылкам мобильного меню--*/
 .next
- { color: #FFFFFF;  
+ { color: black;  
 }
 
 
@@ -326,7 +325,7 @@ height: 40px;}
  /*---Кнопка Donate---*/
 .main-btn-donate {
   color: var(--main-btn-color);
-  background-color: #4D5AE5;
+  background-color: red;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -335,7 +334,7 @@ height: 40px;}
   border: none;
   display: block;
   cursor: pointer;
-  width: 1px;
+  max-width: 169px;
   /* min-width: 169px; */
   height: 50px;
   margin-left: auto;
@@ -345,7 +344,8 @@ height: 40px;}
   border-radius: 10px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  visibility: hidden; 
+  visibility: visible;
+
 
   text-decoration: none;
 }
@@ -394,8 +394,9 @@ height: 40px;}
 
 
 /*--Задаем отступ между логотипом и nav-ul--*/
-.head 
-{ margin-right: 60px; }
+.head
+{ display: flex;
+  margin-right: 60px; }
 
 
 /*--Включаем меню навигации - делаем видимым--*/
@@ -576,7 +577,6 @@ padding: 24px 0;
   padding-bottom: 15px;
   font-size: 18px;
     }
-
 }
    
 /*----------------------HERO--------------------------*/
@@ -601,7 +601,7 @@ url(../images/hero/Hero_mobile_1x.jpg); */
 /* background-size: cover;
 background-repeat: no-repeat;
 background-position: center; */
-border-bottom: 7px solid yellow;
+border-bottom: 7px solid blue;
 position: relative;
 }
 
@@ -611,7 +611,7 @@ position: relative;
   bottom: -13px;
   width: 100%;
   height: 7px;
-  background-color: blue;
+  background-color: yellow;
 }
 
 /*--Описываем медиаправило для фонового изображения HERO-mobile--*/
@@ -679,6 +679,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   margin-left: auto;
   margin-right: auto;
   margin-top: 30px;
+}
+
+.section-text {
+  text-align: justify;
 }
 
 
@@ -799,7 +803,7 @@ padding-bottom: 60px;
 padding-left: 0;
 padding-right: 0;
 position: relative;
-border-bottom: 7px solid yellow;
+border-bottom: 7px solid blue;
 }
 
 .section-team::after {
@@ -808,7 +812,7 @@ border-bottom: 7px solid yellow;
   bottom: -13px;
   width: 100%;
   height: 7px;
-  background-color: blue;
+  background-color: yellow;
   }
 
 .section-title {
@@ -971,7 +975,7 @@ padding-right: 0;
   padding-bottom: 60px;
   padding-left: 0;
   padding-right: 0;
-  border-bottom: 7px solid yellow;
+  border-bottom: 7px solid blue;
   position: relative;
 }
 
@@ -981,7 +985,7 @@ padding-right: 0;
   bottom: -13px;
   width: 100%;
   height: 7px;
-  background-color: blue;
+  background-color: yellow;
   }
 
 /*--Описание контейнера логотипов заказчиков--*/
