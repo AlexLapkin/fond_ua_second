@@ -1382,9 +1382,11 @@ fill: #8E8F99;
   font-weight: 500;
 }
 
-.partners-img {
+.partners-imag {
   width: 166px;
   max-height: 85px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 
