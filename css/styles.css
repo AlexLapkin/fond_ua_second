@@ -377,6 +377,19 @@ height: 40px;}
   text-decoration: none;
 }
 
+.current-page-main
+{position: relative;
+color: var(--link-active-color);
+/*--text-decoration: underline;--*/
+border: none;
+-webkit-appearance: none;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+.current-page-main:focus {
+  outline: none;
+}
 
 /*-----------ПЛАНШЕТНАЯ ВЕРСИЯ-----------*/
 
@@ -572,7 +585,7 @@ padding: 24px 0;
 .nav-link {
   padding-top: 15px;
   padding-bottom: 15px;
-  font-size: 18px;
+  font-size: 17px;
     }
 }
    
@@ -783,28 +796,26 @@ screen and (min-resolution: 2ppx) and (min-width: 1158px) {
 }
 }
 
-/*------------------СЕКЦИЯ OUR TEAM----------------*/
+/*------------------------------------------------------------------*/
+
+/*------------------СЕКЦИЯ WHAT WE DO----------------*/
 
 /*------------МОБИЛЬНАЯ ВЕРСИЯ-------------*/
 
-/* #aboutus {
-  margin-top: 40px;
-} */
-
 /*--Данные секции Our Team, у которой отличается фон--*/
-.section-team
+.section-wedo
 {
 /* background-color: var(--section-team-background-color); */
 margin-top: -40px;
-padding-top: 90px;
-padding-bottom: 40px;
+padding-top: 70px;
+padding-bottom: 30px;
 padding-left: 0;
 padding-right: 0;
 position: relative;
 border-bottom: 10px solid blue;
 }
 
-.section-team::after {
+.section-wedo::after {
   content: "";
   position: absolute;
   bottom: -19px;
@@ -823,7 +834,7 @@ text-align: center;
 {
  display: flex;
  flex-direction: column;
- row-gap: 40px;
+ row-gap: 0px;
  align-items: center;
  }
 
@@ -835,15 +846,18 @@ flex-basis: calc((100%)/1);
 width: 264px;
 height: 500px;
 border-radius: 0px 0px 4px 4px;
-box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+/*--box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);--*/
 }
 
 
 /*--Создание контейнера - имя, должность членов команды--*/
 .name-job
-{ padding: 32px 10px; } /*--внутренние отступы контейнера--*/
+{ padding: 20px 10px; } /*--внутренние отступы контейнера--*/
 
+.name-job-text {
+  text-align: justify;
+}
 
 /*--Данные подзаголовков членов команды--*/
 .section-subtitle-team {
@@ -901,6 +915,204 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .social-link-a:hover,
 .social-link-a:focus {
 background-color: #404bbf;
+}
+
+.img-team {
+  border-radius: 50%;
+
+}
+
+
+/*----------ПЛАНШЕТНАЯ ВЕРСИЯ-------------*/
+
+@media screen and (min-width: 768px)
+
+{
+
+/*--Задаем внутренние паддинги--*/    
+.section-team-content 
+{ width: 584px; }
+
+
+/*--Задаем внутренние отступы и располагаем вертикально--*/
+.section-ul-team {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 50px;   }
+
+
+/*--Считаем ширину карточки сотрудника--*/
+.section-team-card {
+flex-basis: calc((100% - 1*24px)/2);}
+
+.section-team {
+margin-top: -60px; 
+padding-top: 120px;
+padding-bottom: 60px;
+padding-left: 0;
+padding-right: 0;
+}
+
+}
+
+/*---------------ДЕСКТОПНАЯ ВЕРСИЯ------------------*/
+
+
+@media screen and (min-width: 1158px)
+{
+   
+/*--Данные секции Our Team, у которой отличается фон--*/
+.section-team
+{ margin-top: -80px;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;} /*--Задаем внутренние паддинги--*/
+
+
+/*--Задаем паддинги--*/
+.section-team-content
+{ width: 1158px; }
+
+
+.section-team-card {
+    flex-basis: calc((100% - 3*24px)/4);
+  }
+
+}
+
+
+/*------------------------------------------------------------------*/
+
+/*------------------СЕКЦИЯ OUR TEAM----------------*/
+
+/*------------МОБИЛЬНАЯ ВЕРСИЯ-------------*/
+
+/* #aboutus {
+  margin-top: 40px;
+} */
+
+/*--Данные секции Our Team, у которой отличается фон--*/
+.section-team
+{
+/* background-color: var(--section-team-background-color); */
+margin-top: -40px;
+padding-top: 70px;
+padding-bottom: 0px;
+padding-left: 0;
+padding-right: 0;
+position: relative;
+border-bottom: 10px solid blue;
+}
+
+.section-team::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  width: 100%;
+  height: 10px;
+  background-color: yellow;
+  }
+
+
+.section-title {
+text-align: center;  
+}
+
+/*--Задаем внутренние отступы и располагаем вертикально--*/
+.section-ul-team
+{
+ display: flex;
+ flex-direction: column;
+ row-gap: 0px;
+ align-items: center;
+ }
+
+ /*---Описание карточки сотрудника-*/
+.section-team-card {
+background-color: var(--main-background-color);
+text-align: center;
+flex-basis: calc((100%)/1);
+width: 264px;
+height: 500px;
+border-radius: 0px 0px 4px 4px;
+/*--box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+  0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);--*/
+}
+
+
+/*--Создание контейнера - имя, должность членов команды--*/
+.name-job
+{ padding: 20px 10px; } /*--внутренние отступы контейнера--*/
+
+.name-job-text {
+  text-align: justify;
+}
+
+/*--Данные подзаголовков членов команды--*/
+.section-subtitle-team {
+font-weight: 500;
+font-size: 20px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+text-align: center;
+margin-bottom: 8px;
+}
+
+
+/*--Задание параметров должности сотрудника--*/
+.name-job .section-text 
+{
+ font-weight: 400;
+ text-align: center;
+ margin-bottom: 8px;
+}
+
+
+/*--Контейнер 4-х ячеек с иконками соцсетей--*/
+.section-social-ul
+{display: flex;
+gap: 24px;
+justify-content: center;}
+
+/*--Ячейка каждой иконки линка соцсети--*/
+.social-link
+{width: 40px;
+height: 40px;}
+
+
+/*--Описание класса ссылки соцсетей--*/
+.social-link-a
+{
+display: flex;
+width: 100%;
+height: 100%;
+background-color: #4D5AE5;
+border-radius: 50%;
+align-items: center;
+justify-content: center;
+color: #FFFFFF;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+
+/*--Класс для заливки иконок соцсетей--*/
+.icon-sl {
+    fill: var(--icon-fill-color);
+}
+
+/*--Меняем цвет при наведении --*/
+.social-link-a:hover,
+.social-link-a:focus {
+background-color: #404bbf;
+}
+
+.img-team {
+  border-radius: 50%;
+
 }
 
 
@@ -974,7 +1186,7 @@ padding-right: 0;
 .section-customers
 {
   margin-top: -40px;
-  padding-top: 90px;
+  padding-top: 70px;
   padding-bottom: 60px;
   padding-left: 0;
   padding-right: 0;
@@ -993,7 +1205,7 @@ padding-right: 0;
 
 /*--Описание контейнера логотипов заказчиков--*/
 .logo-company
-{margin-bottom:40px;}
+{margin-bottom:20px;}
 
 
 /*--Описываем контейнер--*/
@@ -1023,7 +1235,7 @@ row-gap: 50px;
 {
 width: 100%;
 height: 100%;
-border: 1px solid #8E8F99;
+/*---border: 1px solid #8E8F99; --*/
 border-radius: 4px;
 display: flex;
 align-items: center;
@@ -1134,6 +1346,101 @@ fill: #8E8F99;
  background-color: #FFFFFF;}
 
 }
+
+/*------------------------------------------------------------------*/
+
+/*-------------------СЕКЦИЯ MEDIA ABOUT US-----------------*/
+
+/*---------------МОБИЛЬНАЯ ВЕРСИЯ---------------*/
+
+
+/*--Задаем внутренние паддинги секции заказчиков--*/
+.section-media
+{
+  margin-top: -40px;
+  padding-top: 70px;
+  padding-bottom: 40px;
+  padding-left: 0;
+  padding-right: 0;
+  border-bottom: 10px solid blue;
+  position: relative;
+}
+
+.section-media::after {
+  content: "";
+  position: absolute;
+  bottom: -19px;
+  width: 100%;
+  height: 10px;
+  background-color: yellow;
+  }
+
+.section-partners-subtitle {
+  margin-top: 5px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.partners-img {
+  width: 166px;
+  max-height: 85px;
+}
+
+
+/*----------------ПЛАНШЕТНАЯ ВЕРСИЯ------------------*/
+
+@media screen and (min-width: 768px) 
+{
+     
+  .section-media {
+    margin-top: -60px;
+    padding-top: 120px;
+    padding-bottom: 70px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+/*--Задаем паддинги--*/
+.section-customers-content {
+  width: 584px;
+}
+
+}
+
+/*------------ДЕСКТОПНАЯ ВЕРСИЯ СЕКЦИИ-------------*/
+
+@media screen and (min-width: 1158px)
+{
+    
+
+/*--Задаем внутренние паддинги секции закачиков--*/
+.section-media
+{ margin-top: -80px;
+  padding-top: 140px;
+  padding-bottom: 80px;
+  padding-left: 0;
+  padding-right: 0;}
+
+
+/*--Задаем паддинги--*/
+.section-customers-content {
+  width: 1158px;
+}
+
+
+/*--Описываем ссылку на иконку Заказчика--*/
+.customer-link
+{
+ width: calc((100% - 5824px)/6);
+ width: 168px; 
+ height: 88px;
+ background-color: #FFFFFF;}
+
+}
+
+/*-------------------------------------------------------------------*/
+
 
 /*-------------FOOTER---------------*/
 
